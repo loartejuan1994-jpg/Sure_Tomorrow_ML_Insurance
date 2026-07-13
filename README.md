@@ -4,13 +4,14 @@
 ---
 # Contenido del proyecto
 
-> Tarea	Descripción	Técnica
-
-> Tarea 1	Búsqueda de clientes similares	KNN — `NearestNeighbors`
-> Tarea 2	Predicción de beneficios de seguro	KNN — `KNeighborsClassifier`
-> Tarea 3	Predicción del número de prestaciones	Regresión lineal (implementación propia)
-> Tarea 4	Protección de datos personales	Ofuscación matricial con álgebra lineal
+|Tarea | Descripción | Técnica|
+|---|---|---|
+|Tarea 1|	Búsqueda de clientes similares	|KNN — `NearestNeighbors`|
+|Tarea 2|	Predicción de beneficios de seguro	|KNN — `KNeighborsClassifier`|
+|Tarea 3|	Predicción del número de prestaciones	|Regresión lineal (implementación propia)|
+|Tarea 4|	Protección de datos personales	|Ofuscación matricial con álgebra lineal|
 ---
+
 > Dataset
 
 - Archivo: `insurance_us.csv`
