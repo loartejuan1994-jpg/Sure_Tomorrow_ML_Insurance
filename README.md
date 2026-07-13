@@ -19,14 +19,16 @@
 - Características: `gender`, `age`, `income`, `family_members`
 - Variable objetivo: `insurance_benefits` — número de prestaciones de seguro recibidas en los últimos 5 años
 ---
-> Resultados principales
 
-> Tarea 1 — Clientes similares (KNN)
+# Resultados principales
+
+## Tarea 1 — Clientes similares (KNN)
 - Sin escalado: `income` domina el cálculo de distancia, ignorando las demás variables
 - Con escalado MaxAbs: vecinos genuinamente similares en todas las dimensiones
 - Euclidiana vs. Manhattan: impacto mínimo una vez aplicado el escalado
 
-> Tarea 2 — Clasificación KNN
+
+## Tarea 2 — Clasificación KNN
 
 | Modelo | F1-score |
 |---|---|
@@ -36,7 +38,7 @@
 
 El escalado es condición necesaria para obtener resultados útiles en KNN.
 
-> Tarea 3 — Regresión lineal
+## Tarea 3 — Regresión lineal
 
 |Métrica	| Datos originales	| Datos escalados |
 |---|---|---|
@@ -49,7 +51,7 @@ $$w = (X^TX)^{-1}X^Ty$$
 
 El escalado no afecta los resultados porque los pesos `w` se ajustan automáticamente para compensar cualquier cambio de escala.
 
-> Tarea 4 — Ofuscación de datos
+## Tarea 4 — Ofuscación de datos
 
 Se demostró analítica y computacionalmente que multiplicar $X$ por una matriz invertible $P$ no altera las predicciones del modelo:
 $$\hat{y}_P = (XP)w_P = Xw = \hat{y}$$
