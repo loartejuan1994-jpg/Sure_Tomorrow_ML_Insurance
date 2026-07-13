@@ -1,20 +1,22 @@
-Sure Tomorrow — Machine Learning para Aseguradora
-Proyecto de machine learning aplicado a la aseguradora ficticia Sure Tomorrow, que combina técnicas de álgebra lineal y ML para resolver cuatro tareas de negocio: búsqueda de clientes similares, clasificación, regresión y protección de datos personales mediante ofuscación matricial.
+# Sure Tomorrow — Machine Learning para Aseguradora
+
+>Proyecto de machine learning aplicado a la aseguradora ficticia Sure Tomorrow, que combina técnicas de álgebra lineal y ML para resolver cuatro tareas de >negocio: búsqueda de clientes similares, clasificación, regresión y protección de datos personales mediante ofuscación matricial.
 ---
-Contenido del proyecto
-Tarea	Descripción	Técnica
+# Contenido del proyecto
+
+> Tarea	Descripción	Técnica
 Tarea 1	Búsqueda de clientes similares	KNN — `NearestNeighbors`
 Tarea 2	Predicción de beneficios de seguro	KNN — `KNeighborsClassifier`
 Tarea 3	Predicción del número de prestaciones	Regresión lineal (implementación propia)
 Tarea 4	Protección de datos personales	Ofuscación matricial con álgebra lineal
 ---
-Dataset
+> Dataset
 Archivo: `insurance_us.csv`
 Registros: 5,000 clientes
 Características: `gender`, `age`, `income`, `family_members`
 Variable objetivo: `insurance_benefits` — número de prestaciones de seguro recibidas en los últimos 5 años
 ---
-Resultados principales
+> Resultados principales
 Tarea 1 — Clientes similares (KNN)
 Sin escalado: `income` domina el cálculo de distancia, ignorando las demás variables
 Con escalado MaxAbs: vecinos genuinamente similares en todas las dimensiones
@@ -41,15 +43,16 @@ R²	0.43	0.43
 Diferencia máxima en predicciones	—	7.58 × 10⁻⁸
 La diferencia es atribuible únicamente a precisión numérica de punto flotante.
 ---
-Tecnologías utilizadas
-Python 3
+# Tecnologías utilizadas
+
+>Python 3
 NumPy
 Pandas
 Scikit-learn (`KNeighborsClassifier`, `NearestNeighbors`, `MaxAbsScaler`)
 Seaborn / Matplotlib
 Jupyter Notebook
 ---
-Estructura del repositorio
+# Estructura del repositorio
 ```
 Sure_Tomorrow_ML_Insurance/
 │
@@ -76,8 +79,9 @@ Actualiza la ruta del dataset en la celda de carga:
 df = pd.read_csv("ruta/a/insurance_us.csv")
 ```
 ---
-Conclusiones
-El proyecto demuestra que el escalado previo es indispensable para modelos basados en distancias (KNN), mientras que es irrelevante para la regresión lineal. La ofuscación matricial es un método válido y matemáticamente probado para proteger datos personales sin sacrificar la calidad predictiva del modelo.
+# Conclusiones
+
+> El proyecto demuestra que el escalado previo es indispensable para modelos basados en distancias (KNN), mientras que es irrelevante para la regresión lineal. La ofuscación matricial es un método válido y matemáticamente probado para proteger datos personales sin sacrificar la calidad predictiva del modelo.
 ---
 Autor
 Juan Carlos Buri Loarte  
