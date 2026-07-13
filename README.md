@@ -54,14 +54,15 @@ El escalado no afecta los resultados porque los pesos `w` se ajustan automática
 ## Tarea 4 — Ofuscación de datos
 
 Se demostró analítica y computacionalmente que multiplicar $X$ por una matriz invertible $P$ no altera las predicciones del modelo:
+
 $$\hat{y}_P = (XP)w_P = Xw = \hat{y}$$
 	
 |   | Datos originales | Datos ofuscados (XP) |
 |---|----|----|
 |RMSE	| 0.34 | 0.34|
 | R²	|0.43	|0.43|
+|Diferencia máxima en predicciones|	—	|7.58 × 10⁻⁸|
 
-Diferencia máxima en predicciones	—	7.58 × 10⁻⁸
 La diferencia es atribuible únicamente a precisión numérica de punto flotante.
 ---
 # Tecnologías utilizadas
