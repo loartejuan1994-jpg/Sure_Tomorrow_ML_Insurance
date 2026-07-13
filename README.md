@@ -64,6 +64,7 @@ $$\hat{y}_P = (XP)w_P = Xw = \hat{y}$$
 |Diferencia máxima en predicciones|	—	|7.58 × 10⁻⁸|
 
 La diferencia es atribuible únicamente a precisión numérica de punto flotante.
+
 ---
 # Tecnologías utilizadas
 
